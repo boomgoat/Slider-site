@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Carousel Slider</title>
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Menu -->
+    <label>
+        <input type='checkbox'>
+        <span class='menu'> <span class='hamburger'></span> </span>
+        <ul class="ul-items">
+          <li class="li-home"> <a href='#'>Home</a> </li>
+          <li class="li-about"> <a href='#'>About</a> </li>
+          <li class="li-contact"> <a href='#'>Contact</a> </li>
+        </ul>
+    </label>
+  <!-- Menu End -->
+
+    <!-- Slide Pointers -->
+    <div style='text-align: right;' class="controls">
+        <span class="dot first" onclick='goToSlide(1)'></span>
+        <span class="dot second" onclick='goToSlide(2)'></span>
+        <span class="dot third" onclick='goToSlide(3)'></span>
+    </div>
+    <!-- Slide Pointer End -->
+
+    <!-- Slides -->
+    <!-- Slide One -->
+    <div>
+    <div class="slide" id="first">
+        <div class="text">
+            <h1 class="title">
+                Slider Title<br/>
+                Goes here!
+            </h1>
+            <h2 class="subtitle">
+                Company 1
+                
+            </h2>
+        </div>
+        <video loop muted autoplay>
+            <source src="./Resources/airbnb.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Slide Two -->
+    <div class="slide" id="second"> 
+        <div class="text">
+            <h1 class="title">
+                Slider Title<br/>
+                Goes here!
+            </h1>
+            <h2 class="subtitle">
+                Company 2
+                <span class="glyphicon arrow glyphicon-download"></span>
+            </h2>
+        </div>
+        <video loop muted autoplay>
+            <source src="./Resources/bg-cover-new.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Slide Three -->
+    <div class="slide" id="third">
+        <div class="text">
+            <h1 class="title">
+                Slider Title<br/>
+                Goes here!
+            </h1>
+            <h2 class="subtitle">
+                Company 3
+                <span class="glyphicon arrow glyphicon-download"></span>
+            </h2>
+        </div>
+        <video loop muted autoplay>
+            <source src="./Resources/Anatomy-of-Next-Season-Two.mp4" type="video/mp4">
+        </video>
+    </div>
+  </div>
+    <!-- Slides End -->
+
+    <!-- News Slider -->
+    <div class="newsBar">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="news-slider" class="owl-carousel">
+                    <div class="post-slide">
+                        <div class="post-img">
+                            <a href="#" ><img src="images/Affluent-Women-Mailing-Lists.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-date">
+                                <span class="month">apr</span>
+                                <span class="date">10</span>
+                            </div>
+                            <h5 class="post-title"><a href="#">Latest News Post</a></h5>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ipsum maxime recusandae repudiandae similique.
+                            </p>
+                        </div>
+                        <ul class="post-bar">
+                            <li> <i class="fa fa-users"></i> <a href="#">admin</a> </li>
+                            <li> <i class="fa fa-comments"></i> <a href="#">2</a> </li>
+                            <li> <i class="fa fa-thumbs-up"></i> <a href="#">2 Likes</a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="post-slide">
+                        <div class="post-img">
+                            <a href="#" ><img src="images/person-2.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-date">
+                                <span class="month">apr</span>
+                                <span class="date">12</span>
+                            </div>
+                            <h5 class="post-title"><a href="#">Latest News Post</a></h5>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ipsum maxime recusandae repudiandae similique.
+                            </p>
+                        </div>
+                        <ul class="post-bar">
+                            <li> <i class="fa fa-users"></i> <a href="#">admin</a> </li>
+                            <li> <i class="fa fa-comments"></i> <a href="#">3</a> </li>
+                            <li> <i class="fa fa-thumbs-up"></i> <a href="#">5 Likes</a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="post-slide">
+                        <div class="post-img">
+                            <a href="#" ><img src="images/Sam-Revilter.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-date">
+                                <span class="month">apr</span>
+                                <span class="date">14</span>
+                            </div>
+                            <h5 class="post-title"><a href="#">Latest News Post</a></h5>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ipsum maxime recusandae repudiandae similique.
+                            </p>
+                        </div>
+                        <ul class="post-bar">
+                            <li> <i class="fa fa-users"></i> <a href="#">admin</a> </li>
+                            <li> <i class="fa fa-comments"></i> <a href="#">5</a> </li>
+                            <li> <i class="fa fa-thumbs-up"></i> <a href="#">7 Likes</a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="post-slide">
+                        <div class="post-img">
+                            <a href="#" ><img src="images/team4-large.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-date">
+                                <span class="month">apr</span>
+                                <span class="date">15</span>
+                            </div>
+                            <h5 class="post-title"><a href="#">Latest News Post</a></h5>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ipsum maxime recusandae repudiandae similique.
+                            </p>
+                        </div>
+                        <ul class="post-bar">
+                            <li> <i class="fa fa-users"></i> <a href="#">admin</a> </li>
+                            <li> <i class="fa fa-comments"></i> <a href="#">9</a> </li>
+                            <li> <i class="fa fa-thumbs-up"></i> <a href="#">8 Likes</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- News Slider End -->
+    
+<script src="./main.js"></script>
+</body>
+</html>
